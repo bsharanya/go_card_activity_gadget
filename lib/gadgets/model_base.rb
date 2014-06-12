@@ -15,7 +15,7 @@ module Gadgets
             :string  => Proc.new { |v| v.to_s }
     }.with_indifferent_access
 
-    class_inheritable_hash :db_columns
+    class_attribute :db_columns
     self.db_columns = {}
 
     def self.columns(*names)
