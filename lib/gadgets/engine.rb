@@ -14,5 +14,7 @@ module Gadgets
         require f
       end
     end
+
+    config.autoload_paths << File.expand_path("..", __FILE__)
   end
 end
